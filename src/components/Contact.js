@@ -59,9 +59,11 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
+                //Contact fprm start
                 <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
+                      //First name
                       <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
@@ -84,7 +86,7 @@ export const Contact = () => {
                       </Col>
                     }
                   </Row>
-                </form>
+                </form>//Contact form end
               </div>}
             </TrackVisibility>
           </Col>

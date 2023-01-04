@@ -34,6 +34,7 @@ export const NavBar = () => {
 
   return (
     <Router>
+    {/*Navbar start*/}
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
@@ -60,7 +61,7 @@ export const NavBar = () => {
             </span>
           </Navbar.Collapse>
         </Container>
-      </Navbar>//navbar clear
+      </Navbar>{/*Navbar End*/}
     </Router>
   )
 }

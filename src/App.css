@@ -616,3 +616,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+/* Rotating globe start */
+.globeStyle{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.globeImage{
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+.headerStyle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Rotating globe start */

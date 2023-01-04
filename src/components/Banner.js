@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-{/*import headerImg from "../assets/img/header-img.svg";*/}
-import RotatingGlobe from "../assets/img/RotatingEarth.gif";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import RotatingGlobe from "../assets/img/RotatingEarth.gif";
+import 'animate.css';
 import '../App.css'
 import './GlitchEffect.css'
 

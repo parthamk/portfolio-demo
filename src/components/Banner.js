@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+{/*import headerImg from "../assets/img/header-img.svg";*/}
+import RotatingGlobe from "../assets/img/RotatingEarth.gif";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import '../App.css'
+import './GlitchEffect.css'
 
 {/* explain this line */} 
 export const Banner = () => {
@@ -70,7 +73,15 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  {/*<img src={headerImg} alt="Header Img"/>*/}
+                  <div className="globeStyle">
+                    <img src={RotatingGlobe} alt="Header Img" className="globeImage"/>
+                    <div className="headerStyle">
+                      <div class="hero glitch layers" data-text="Full-Stack Developer">
+                        <span>Full-Stack Developer</span>
+                      </div>
+                      </div>
+                  </div>
                 </div>}
             </TrackVisibility>
           </Col>

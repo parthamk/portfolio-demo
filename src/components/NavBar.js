@@ -62,6 +62,6 @@ export const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>{/*Navbar End*/}
-    </Router>{/* mostly part are clear have to read react- bootstrap why suing here*/}
+    </Router>{/* mostly part are clear have to read react- bootstrap why using here*/}
   )
 }

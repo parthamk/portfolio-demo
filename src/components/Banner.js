@@ -86,6 +86,6 @@ export const Banner = () => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </section>{/*i have to study more on this part*/}
   )
 }

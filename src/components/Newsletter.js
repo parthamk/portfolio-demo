@@ -40,7 +40,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
               </form>
             </Col>
           </Row>
-        </div>
+        </div>{/*done*/}
       </Col>
   )
 }

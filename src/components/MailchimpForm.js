@@ -15,7 +15,7 @@ export const MailchimpForm = () => {
             onValidated={formData => subscribe(formData)}
             />
         )}
-        />{/*please explain im also studying*/}
+        />
     </>
   )
 }

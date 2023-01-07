@@ -23,7 +23,7 @@ export const Footer = () => {
             <p>Copyright 2022. All Rights Reserved</p>
           </Col>
         </Row>
-      </Container>{/* all clear*/}
+      </Container>
     </footer>
   )
 }

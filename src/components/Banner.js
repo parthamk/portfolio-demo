@@ -3,11 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
 import RotatingGlobe from "../assets/img/RotatingEarth.gif";
+import TechSlider from "./TechSlider";
 import 'animate.css';
 import '../App.css'
 import './GlitchEffect.css'
 
-{/* explain this line */} 
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -22,8 +23,10 @@ export const Banner = () => {
       tick();
     }, delta);
 
-    return () => { clearInterval(ticker) };
-  }, [text])
+    return () => {
+       clearInterval(ticker) 
+      };
+  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -70,22 +73,23 @@ export const Banner = () => {
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  {/*<img src={headerImg} alt="Header Img"/>*/}
+              {/* {({ isVisible }) => { */}
+                {/* <div className={isVisible ? "animate__animated animate__zoomIn" : ""}> */}
                   <div className="globeStyle">
                     <img src={RotatingGlobe} alt="Header Img" className="globeImage"/>
                     <div className="headerStyle">
+                      <TechSlider />
                       <div class="hero glitch layers" data-text="Full-Stack Developer">
                         <span>Full-Stack Developer</span>
                       </div>
-                      </div>
+                    </div>
                   </div>
-                </div>}
+                {/* </div> */}
+              {/* }} */}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
-    </section>{/*i have to study more on this part*/}
+    </section>
   )
 }

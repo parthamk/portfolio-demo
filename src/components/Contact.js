@@ -86,7 +86,7 @@ export const Contact = () => {
                       </Col>
                     }
                   </Row>
-                </form>{/*still reading*/}
+                </form>{/*Contact form end*/}
               </div>}
             </TrackVisibility>
           </Col>

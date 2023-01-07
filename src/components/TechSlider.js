@@ -1,10 +1,10 @@
-import Icon1 from "../assets/img/icons/bootstrap-framework-logo.png";
-import Icon2 from "../assets/img/icons/css-logo.png";
-import Icon3 from "../assets/img/icons/github-2.png";
-import Icon4 from "../assets/img/icons/html-logo.png";
-import Icon5 from "../assets/img/icons/java-script.png";
-import Icon6 from "../assets/img/icons/javascript-logo.png";
-import Icon7 from "../assets/img/icons/react.png";
+import Icon1 from "../assets/img/icons/bootstrap-framework-logo.svg";
+import Icon2 from "../assets/img/icons/css-logo.svg";
+import Icon3 from "../assets/img/icons/github-2.svg";
+import Icon4 from "../assets/img/icons/html-logo.svg";
+import Icon5 from "../assets/img/icons/java-script.svg";
+import Icon6 from "../assets/img/icons/javascript-logo.svg";
+import Icon7 from "../assets/img/icons/react.svg";
 // import arrow1 from "../assets/img/arrow1.svg";
 // import arrow2 from "../assets/img/arrow2.svg";
 // import Carousel from 'react-multi-carousel';

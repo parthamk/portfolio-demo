@@ -36,7 +36,7 @@ const TechSlider = () => {
 
   return(
     <>
-        <Carousel responsive={responsive} cols={1} rows={1} gap={10} autoplay={2000} hideArrow loop className="images">
+        <Carousel responsive={responsive} cols={1} rows={1} gap={10} autoplay={3000} hideArrow loop className="images">
           
           
           <Carousel.Item>

@@ -58,7 +58,7 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 //Banner title - Partha
                 <span className="tagline">Welcome to my Portfolio</span> 
-                //animated text
+               {/*enimated text written in bellow*/}
                 <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                   //Let's connect banner button
@@ -70,6 +70,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                  {/*here is the header image*/}
                   <img src={headerImg} alt="Header Img"/>
                 </div>}
             </TrackVisibility>

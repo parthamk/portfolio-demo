@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
 import RotatingGlobe from "../assets/img/RotatingEarth.gif";
-import TechSlider from "./TechSlider";
+// import TechSlider from "./TechSlider";
+import Slider from "./Slider";
 import 'animate.css';
 import '../App.css'
 import './GlitchEffect.css'
@@ -78,7 +79,7 @@ export const Banner = () => {
                   <div className="globeStyle">
                     <img src={RotatingGlobe} alt="Header Img" className="globeImage"/>
                     <div className="headerStyle">
-                      <TechSlider />
+                      <Slider />
                       <div class="hero glitch layers" data-text="Full-Stack Developer">
                         <span>Full-Stack Developer</span>
                       </div>

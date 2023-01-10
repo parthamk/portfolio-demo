@@ -1,0 +1,50 @@
+/* .App {
+    width: 400px;
+    height: 400px;
+  }
+   */
+  /* Slideshow */
+  
+  .slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100px;
+  }
+  
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+  }
+  
+  .slide {
+    display: inline-block;
+  
+    height: 100px;
+    width: 100%;
+    border-radius: 40px;
+    /* margin-left: 30%;
+    margin-right: 30%; */
+  }
+  
+  /* Buttons */
+  
+  .slideshowDots {
+    text-align: center;
+  }
+  
+  .slideshowDot {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  
+    cursor: pointer;
+    margin: 15px 7px 0px;
+  
+    background-color: #c4c4c4;
+  }
+  
+  .slideshowDot.active {
+    background-color: #6a0dad;
+  }
+  

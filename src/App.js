@@ -7,10 +7,12 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+// import ProgressCircle from './components/ProgressCircle';
 
 function App() {
   return (
     <div className="App" >
+      {/* <ProgressCircle/> */}
       <NavBar />
       <Banner />
       <Skills />

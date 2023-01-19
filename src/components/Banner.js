@@ -5,7 +5,7 @@ import TrackVisibility from 'react-on-screen';
 import RotatingGlobe from "../assets/img/RotatingEarth.gif";
 // import TechSlider from "./TechSlider";
 import Slider from "./Slider";
-import 'animate.css';
+// import 'animate.css';
 import '../App.css'
 import './GlitchEffect.css'
 
@@ -27,7 +27,7 @@ export const Banner = () => {
     return () => {
        clearInterval(ticker) 
       };
-  }, [text]);
+    },[text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -65,7 +65,7 @@ export const Banner = () => {
                 {/* Banner title */}
                 <span className="tagline">Welcome to my Portfolio</span> 
                 {/* animated text */}
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h3>{`Hi! I'm <YOUR NAME>`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h3>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                   {/* Let's connect banner button */}
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>

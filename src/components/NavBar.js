@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import Resume from '../assets/resume/sample.pdf';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+// import Toggle from "./Toggle";
+import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 // import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -54,10 +53,11 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+              <a href="#"><LinkedIn className="icon" /></a>
+                <a href="#"><Facebook className="icon" /></a>
+                <a href="#"><Instagram className="icon" /></a>
               </div>
+              {/* <Toggle /> */}
               {/* Alternate Let's connect Button */}
               {/* <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

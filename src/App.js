@@ -8,8 +8,15 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 // import ProgressCircle from './components/ProgressCircle';
+import { keepTheme} from "./utils/themes";
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    keepTheme();
+  })
+  
   return (
     <div className="App" >
       {/* <ProgressCircle/> */}

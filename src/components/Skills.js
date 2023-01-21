@@ -11,18 +11,19 @@ import 'react-multi-carousel/lib/styles.css';
 // import arrow2 from "../assets/img/arrow2.svg";
 // import colorSharp from "../assets/img/color-sharp.png"
 
+const percentage = 50;
 
 export const Skills = () => {
   const [percentage, setPercentage] = useState(0);
 
-  useEffect(() => {
-    setTimeout(() => {
-        let count = 100;
-      if (percentage < count) {
-        setPercentage(percentage + 1);
-      }
-    }, 50);
-  }, [percentage]);
+//   useEffect(() => {
+//     setTimeout(() => {
+//         let count = 100;
+//       if (percentage < count) {
+//         setPercentage(percentage + 1);
+//       }
+//     }, 50);
+//   }, [percentage]);
 
 
   const responsive = {

@@ -184,7 +184,7 @@ span.navbar-text {
 .social-icon a:hover {
 /* 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%); */
 	color: var(--dark-text);
-	opacity: 45%;
+	opacity: 25%;
 }
 .navbar-text button {
   font-weight: 700;

@@ -163,6 +163,7 @@ span.navbar-text {
   border: 1px solid var(--icon-border);
 }
 .social-icon a::before {
+  opacity: 30%
   color: var(--dark-text);
   content: "";
   width: 50px;

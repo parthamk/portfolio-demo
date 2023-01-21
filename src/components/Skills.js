@@ -1,8 +1,11 @@
-import CircularProgressBar from './CirculerProgressBar';
+import React, { useEffect, useState } from 'react';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 // import meter1 from "../assets/img/meter1.svg";
 // import meter2 from "../assets/img/meter2.svg";
 // import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
+import ChangingProgressProvider from "./ChangingProgressProvider";
 import 'react-multi-carousel/lib/styles.css';
 // import arrow1 from "../assets/img/arrow1.svg";
 // import arrow2 from "../assets/img/arrow2.svg";
@@ -10,6 +13,18 @@ import 'react-multi-carousel/lib/styles.css';
 
 
 export const Skills = () => {
+  const [percentage, setPercentage] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => {
+        let count = 100;
+      if (percentage < count) {
+        setPercentage(percentage + 1);
+      }
+    }, 50);
+  }, [percentage]);
+
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -30,6 +45,14 @@ export const Skills = () => {
     }
   };
 
+  const circleDiv = {
+    textAlign: "center",
+    alignItems: "center",
+    display: "flex",
+    flexDirection:"column",
+    justifyContent: "center",
+  }
+
 
   return (
     <section className="skill" id="skills">
@@ -40,20 +63,42 @@ export const Skills = () => {
                         <h2>Skills</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel skill-slider">
-                            <div className="item" style={{ alighItem:"center"}}>
+                            <div className="item" style={circleDiv}>
                                 {/* <img src={meter2} alt="Image" /> */}
-                                <CircularProgressBar count={30}/>
+                                <div style={{textAlign:"center",}}>
+                                  <div style={{ width: 150}}>
+                                  <ChangingProgressProvider values={[0, 80]}>
+                                    {percentage => (
+                                      <CircularProgressbar value={percentage} text={`${percentage}%`} />
+                                    )}
+                                  </ChangingProgressProvider>
+                                  </div>
                                 <h5>Brand Identity</h5>
+                                </div>
                             </div>
-                            <div className="item">
+                            <div className="item" style={circleDiv}>
                                 {/* <img src={meter3} alt="Image" /> */}
-                                <CircularProgressBar percentage={30}/>
+                                  <div style={{ width: 150}}>
+                                  <ChangingProgressProvider values={[0, 80]}>
+                                    {percentage => (
+                                      <CircularProgressbar value={percentage} text={`${percentage}%`} />
+                                    )}
+                                  </ChangingProgressProvider>
+                                  </div>
                                 <h5>Logo Design</h5>
                             </div>
-                            <div className="item">
+                            <div className="item" style={circleDiv}>
                                 {/* <img src={meter1} alt="Image" /> */}
-                                <CircularProgressBar percentage={30}/>
+                                <div style={{textAlign:"center",}}>
+                                  <div style={{ width: 150}}>
+                                  <ChangingProgressProvider values={[0, 80]}>
+                                    {percentage => (
+                                      <CircularProgressbar value={percentage} text={`${percentage}%`} />
+                                    )}
+                                  </ChangingProgressProvider>
+                                  </div>
                                 <h5>Web Development</h5>
+                                </div>
                             </div>
                         </Carousel>
                     </div>

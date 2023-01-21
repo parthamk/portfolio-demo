@@ -2,7 +2,7 @@ import React from "react";
 
 class ChangingProgressProvider extends React.Component {
   static defaultProps = {
-    interval: 100
+    interval: 1000
   };
 
   state = {

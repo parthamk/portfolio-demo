@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 // import meter1 from "../assets/img/meter1.svg";
@@ -14,17 +14,7 @@ import 'react-multi-carousel/lib/styles.css';
 const percentage = 50;
 
 export const Skills = () => {
-  const [percentage, setPercentage] = useState(0);
-
-//   useEffect(() => {
-//     setTimeout(() => {
-//         let count = 100;
-//       if (percentage < count) {
-//         setPercentage(percentage + 1);
-//       }
-//     }, 50);
-//   }, [percentage]);
-
+//   const [percentage, setPercentage] = useState(0);
 
   const responsive = {
     superLargeDesktop: {

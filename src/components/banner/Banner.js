@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
-import RotatingGlobe from "../assets/img/RotatingEarth.gif";
-// import TechSlider from "./TechSlider";
+// import RotatingGlobe from "../assets/img/RotatingEarth.gif";
+import Blob from './Blob'
 import Slider from "./Slider";
-// import 'animate.css';
-import '../App.css'
+// import Slider from  './sliderv2'
+import '../../App.css'
 import './GlitchEffect.css'
 
 
@@ -18,6 +18,7 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
   const period = 2000;
+  
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -74,10 +75,10 @@ export const Banner = () => {
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
-              {/* {({ isVisible }) => { */}
-                {/* <div className={isVisible ? "animate__animated animate__zoomIn" : ""}> */}
                   <div className="globeStyle">
-                    <img src={RotatingGlobe} alt="Header Img" className="globeImage"/>
+                    {/* <img src={RotatingGlobe} alt="Header Img" className="globeImage"/> */}
+                    {/* <HexagonContainer /> */}
+                    <Blob />
                     <div className="headerStyle">
                       <Slider />
                       <div class="hero glitch layers" data-text="Full-Stack Developer">
@@ -85,8 +86,6 @@ export const Banner = () => {
                       </div>
                     </div>
                   </div>
-                {/* </div> */}
-              {/* }} */}
             </TrackVisibility>
           </Col>
         </Row>

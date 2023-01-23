@@ -1,11 +1,11 @@
 import { useEffect, useState, useRef } from "react";
-import Icon1 from "../assets/img/icons/html-5.png";
-import Icon2 from "../assets/img/icons/css3.png";
-import Icon3 from "../assets/img/icons/bootstrap.png";
-import Icon4 from "../assets/img/icons/github.png";
-import Icon5 from "../assets/img/icons/javascript.png";
-import Icon6 from "../assets/img/icons/react.png";
-import Icon7 from "../assets/img/icons/javascript.png";
+import Icon1 from "../../assets/img/icons/html-5.png";
+import Icon2 from "../../assets/img/icons/css3.png";
+import Icon3 from "../../assets/img/icons/bootstrap.png";
+import Icon4 from "../../assets/img/icons/github.png";
+import Icon5 from "../../assets/img/icons/javascript.png";
+import Icon6 from "../../assets/img/icons/react.png";
+import Icon7 from "../../assets/img/icons/javascript.png";
 import "./Slider.css";
 
 const Icons = [

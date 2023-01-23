@@ -59,7 +59,7 @@
     margin: 20px;
     width: 100px;
     position: fixed;
-    bottom: 16px;
+    bottom: 16px; /*for hever toggle */
     right: 16px;
     z-index: 1;
 }

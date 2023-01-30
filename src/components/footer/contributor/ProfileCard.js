@@ -40,6 +40,11 @@ const ProfileCard = () => {
             title="Nisha Rajak"
             description="Full-stack web developer"
             />
+            <Card
+            img="https://avatars.githubusercontent.com/u/111532433?v=4"
+            title="Neha Nayek"
+            description="Full-stack web developer"
+            />
   </div>
   )
 }

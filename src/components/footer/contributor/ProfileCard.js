@@ -8,9 +8,9 @@ const Card = (props) => {
         <div className="body">
           <h2 className="title">{props.title}</h2>
           <p className="description">{props.description}</p>
-            <button className="btn">
-                Connect Me
-            </button>
+//             <button className="btn">
+//                 Connect Me
+//             </button>
         </div>
       </div>
     );

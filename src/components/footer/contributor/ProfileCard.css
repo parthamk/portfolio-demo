@@ -30,7 +30,7 @@ body {
 .card {
   /* box-shadow: 0 0 10px 5px $clr-gray300; */
   border-radius: 0.2rem;
-  max-width: 28rem;
+  max-width: 22rem;
   display: flex;
   background: #ffffff89;
   /* border: none; */

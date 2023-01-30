@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { ProjectContributor } from "./contributor/ProjectContributor";
-// import logo from "../assets/img/logo.svg";
+import ProfileCard from "./contributor/ProfileCard";
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 
 const logoStyle = {
@@ -12,7 +11,7 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <ProjectContributor />
+          <ProfileCard />
           <Col size={12} sm={6}>
             {/* <img src={logo} alt="Logo" /> */}
             <h4 style={logoStyle}>Your Logo</h4>

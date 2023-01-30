@@ -58,8 +58,8 @@ export const Contact = () => {
             <TrackVisibility>
               {({ isVisible }) =>    
                 <iframe
-                    width="500"
-                    height="450"
+                    width="100%"
+                    height="500px"
                     title="map"
                     className="absolute inset-0"
                     style={{ filter: "opacity(0.7)" }}

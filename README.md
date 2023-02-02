@@ -1,36 +1,35 @@
-# Personal Portfolio Website in React
+# Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Responsive Personal Portfolio Website to showcase my web presence, resume, story, & featured projects.
 
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="https://user-images.githubusercontent.com/110169184/211553851-2423aa93-96b5-49b6-8dc6-27b005395c3f.png">
+## Description
 
-Built using:
+In this portfolio, there are different components which have different functionalities and contexts like the Header, main page, skill meter, projects, google map, contribution section and footer with links to various personal accounts.
 
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animations library: Animate.css
+## Tech Stack
 
-In the /personal-portfolio, you can run:
+**React:** A JavaScript library for building user interfaces.
 
-### `npm start`
+**React library:** Material UI.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**CSS framework:** React-bootstrap.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**CSS animations library:** Animate.css
 
-### `npm test`
+## Brief Description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Header** - There are buttons like Home, Skills & Projects which directs to the specific section of page. A separate button for viewing/dowloading resume of the person.
 
-### `npm run build`
+**Banner/Profile page** - It consists of introduction of a person on the left side and skills slider on the right side of page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Theme toggle** - It's a button to switch between Dark or Light theme of page. This is fixed at the right buttom of the page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Skills** - This section showcase percentile proficiency of each skill with slider.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Projects** - This section consists of project cards with hovering effect to showcase all the projects done by the person.
+
+**Contact form** - A contact form is created to reach out to a person for any requirements using EmailJS service. EmailJS helps user to send there contact information to the belonging person of portfolio. Google map is integrated on the left part to get to know the location to the user.
+
+**Contribution** - This section consists of profile card of all the contributors of the portfolio project.
+
+**Footer** - This section consists of social media icons which are linked to the personal accounts of the person.

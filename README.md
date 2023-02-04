@@ -32,3 +32,7 @@ In this portfolio, there are different components which have different functiona
 **Contribution** - This section consists of profile card of all the contributors of the portfolio project.
 
 **Footer** - This section consists of social media icons which are linked to the personal accounts of the person.
+
+## Hosted Link
+
+https://opensource-portfolio-template.netlify.app/

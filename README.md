@@ -8,13 +8,12 @@ In this portfolio, there are different components which have different functiona
 
 ## Tech Stack
 
-**React:** A JavaScript library for building user interfaces.
-
-**React library:** Material UI.
-
-**CSS framework:** React-bootstrap.
-
-**CSS animations library:** Animate.css
+| Tools | Description |
+| --- | --- |
+| React | A JavaScript library for building user interfaces. |
+| React library | Material UI. |
+| CSS framework | React-bootstrap. |
+| CSS animations library | Animate.css |
 
 ## Brief Description
 

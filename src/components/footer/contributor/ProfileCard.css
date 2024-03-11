@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 
-
 *,
 *::before,
 *::after {
@@ -15,99 +14,53 @@ body {
 }
 
 .wrapper {
-  /* margin: 2rem; */
   margin-top: 2rem;
   margin-bottom: 2rem;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  border-radius: 15px;
-  padding: 25px;
-  background-color: #132e65ab;
+  display: flex;
+  overflow: hidden;
+}
+
+.marquee-card {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  /* Adjust spacing between cards */
 }
 
 .card {
-  /* box-shadow: 0 0 10px 5px $clr-gray300; */
-  border-radius: 0.2rem;
   max-width: 22rem;
   display: flex;
   background: #ffffff89;
-  /* border: none; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
 .card img {
-  /* width: 14rem; */
-  /* height: 11rem; */
   object-fit: cover;
   border-radius: 50%;
-  
+  width: 100px;
+  height: 100px;
+  padding: 5px;
 }
 
 .card .body {
   margin: 1rem;
   flex-grow: 1;
 }
+
 .card .title {
   line-height: 1.4rem;
   margin-bottom: 0.5rem;
   color: #0e48fe;
 }
+
 .card .description {
   line-height: 1.2rem;
 }
 
-.btn {
-  border: none;
-  border-top: 1px solid #e1e5ee;
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: bold;
-  color: inherit;
-  width: 100%;
-  padding-top: 1rem;
-  margin-top: 1rem;
-  cursor: pointer;
-  color: #1b1b1d;
-}
-
-/* .btn .a{
-  text-decoration: none;
-} */
-
-.btn:hover {
-  background-color: #0e48fe;
-  color: #e1e5ee;
-
-}
-
-@media screen and (min-width: 600px) {
-  .wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 16rem));
-    align-items: center;
-    justify-content: center;
-  }
-
-  .wrapper .card {
-    flex-direction: column;
-    text-align: center;
-    width: fit-content;
-    border-radius: 0.5rem;
-  }
-  .card img {
-    width: auto;
-    height: 15rem;
-    object-fit: cover;
-    border-radius: 50%;
-    padding: 10px;
-  }
-  .container{
-    margin: 0 auto;
-    width: 100%;
-    object-fit: cover;
-  }
-  img {
-    width: 100%;
-    height: auto;
+@media screen and (max-width: 768px) {
+  .marquee-card {
+    margin-right: 10px;
+    /* Adjust spacing for smaller screens */
   }
 }

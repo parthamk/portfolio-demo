@@ -37,6 +37,9 @@
     "rerousel": "^0.1.9",
     "web-vitals": "^4.2.1"
   },
+  "overrides": {
+    "jsonpath": "^1.2.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

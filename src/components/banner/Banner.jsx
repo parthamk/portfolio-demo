@@ -66,7 +66,7 @@ export const Banner = () => {
                 {/* Banner title */}
                 <span className="tagline">Welcome to my Portfolio</span> 
                 {/* animated text */}
-                <h3>{`Hi! I'm <YOUR NAME>`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h3>
+                <h3>{`Hi! I'm <YOUR NAME>`} <span className="txt-rotate" data-period="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h3>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                   {/* Let's connect banner button */}
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
@@ -75,17 +75,19 @@ export const Banner = () => {
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
-                  <div className="globeStyle">
-                    {/* <img src={RotatingGlobe} alt="Header Img" className="globeImage"/> */}
-                    {/* <HexagonContainer /> */}
-                    <Blob />
-                    <div className="headerStyle">
-                      <Slider />
-                      <div class="hero glitch layers" data-text="Full-Stack Developer">
-                        <span>Full-Stack Developer</span>
-                      </div>
+              {({ isVisible }) => (
+                <div className="globeStyle">
+                  {/* <img src={RotatingGlobe} alt="Header Img" className="globeImage"/> */}
+                  {/* <HexagonContainer /> */}
+                  <Blob />
+                  <div className="headerStyle">
+                    <Slider />
+                    <div className="hero glitch layers" data-text="Full-Stack Developer">
+                      <span>Full-Stack Developer</span>
                     </div>
                   </div>
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>

@@ -65,7 +65,7 @@ export const Contact = () => {
                     style={{ filter: "opacity(0.7)" }}
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62217.443499287576!2d77.56961776313786!3d12.934038420296405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15c87627a8e9%3A0x895356f8182066d!2sNewton%20School!5e0!3m2!1sen!2sin!4v1674068898024!5m2!1sen!2sin"
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
+                    referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               }
             </TrackVisibility>

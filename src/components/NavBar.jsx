@@ -34,7 +34,7 @@ export const NavBar = () => {
   }
 
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
     {/*Navbar start*/}
       <Navbar expand="md" className={scrolled ? "scrolled" : ""} >
         <Container>

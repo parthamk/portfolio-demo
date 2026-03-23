@@ -15,7 +15,7 @@ function keepTheme() {
   }
 }
 
-module.exports = {
+export {
   setTheme,
   keepTheme
 }

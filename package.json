@@ -27,7 +27,7 @@
     "react-on-screen": "^2.1.1",
     "react-pdf": "^10.4.1",
     "react-responsive-carousel": "^3.2.23",
-    "react-router-dom": "^7.13.1",
+    "react-router-dom": "^7.13.2",
     "react-router-hash-link": "^2.4.3",
     "rerousel": "^0.1.9",
     "web-vitals": "^5.1.0"

@@ -14,7 +14,7 @@
     "bootstrap": "^5.3.8",
     "cors": "^2.8.6",
     "express": "^5.2.1",
-    "nodemailer": "^8.0.3",
+    "nodemailer": "^8.0.5",
     "react": "^19.2.4",
     "react-bootstrap": "^2.10.10",
     "react-bootstrap-icons": "^1.11.6",
